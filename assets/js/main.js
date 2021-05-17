@@ -9,6 +9,13 @@ document.getElementById('crea').addEventListener('click', function (){
 
     
 });
+let tomato = document.getElementById('tomato').value;
+let cheese = document.getElementById('cheese').value;
+let egg = document.getElementById('egg').value;
+let mustard = document.getElementById('mustard').value;
+let lettuce = document.getElementById('lettuce').value;
+let ketchup = document.getElementById('ketchup').value;
+
 
 var checkboxes = document.getElementsByClassName('ingredient-checkbox');
 console.log(checkboxes);
@@ -16,12 +23,13 @@ for (let i=0; i < checkboxes.length; i++){
   let checkedEl = checkboxes[i];
   console.log(checkedEl);
  
+  
   /* if (checkedEl == ){
     checkedEl += prezzoBase
   } */
 }
- let valueEL = document.getElementsByClassName('ingredient-checkbox').value;
- console.log(valueEL);
+ let valueEl = document.getElementsByClassName('ingredient-checkbox').value;
+ console.log(valueEl);
 //Consigli del giorno:
 //Create inizialmente un html base con gli elementi minimi necessari al funzionamento, 
 //passate poi alla parte JS ragionando come sempre a step. 
