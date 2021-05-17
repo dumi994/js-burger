@@ -15,21 +15,13 @@ console.log(checkboxes);
 for (let i=0; i < checkboxes.length; i++){
   let checkedEl = checkboxes[i];
   console.log(checkedEl);
-  let valueEL = document.getElementsByClassName('ingredient-checkbox').value;
-  console.log(valueEl);
+ 
   /* if (checkedEl == ){
     checkedEl += prezzoBase
   } */
 }
-/* otherCheckbox.addEventListener('change', () => {
-    if(otherCheckbox.checked) {
-      otherText.style.visibility = 'visible';
-      otherText.value = '';
-    } else {
-      otherText.style.visibility = 'hidden';
-    }
-  }); */
-
+ let valueEL = document.getElementsByClassName('ingredient-checkbox').value;
+ console.log(valueEL);
 //Consigli del giorno:
 //Create inizialmente un html base con gli elementi minimi necessari al funzionamento, 
 //passate poi alla parte JS ragionando come sempre a step. 
