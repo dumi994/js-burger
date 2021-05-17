@@ -1,25 +1,26 @@
 //Il programma dovrà consentire di calcolare il prezzo del panino selezionando o deselezionando gli ingredienti proposti.
-var prezzoBase = 50;
-var salsa = 5;
-var aggiunta = 10;
+const prezzoBase = 50;
+const salsa = 5;
+const aggiunta = 10;
 
-
-
-
-/* var userPomodoro = document.getElementById('pomodori').value;
-var userMustard = document.getElementById('pomodori').value;
-var userCheese = document.getElementById('pomodori').value;
-var userEgg = document.getElementById('pomodori').value;
-var userLettuce = document.getElementById('pomodori').value;
-var userKetchup = document.getElementById('pomodori').value;
-console.log(userKetchup);
-console.log(userEgg);
- */
-document.getElementById('crea').addEventListener('change', function (){
+document.getElementById('crea').addEventListener('click', function (){
     let aggiunte = document.getElementById('userSelect').value;
     console.log(aggiunte);
+
+    
 });
 
+var checkboxes = document.getElementsByClassName('ingredient-checkbox');
+console.log(checkboxes);
+for (let i=0; i < checkboxes.length; i++){
+  let checkedEl = checkboxes[i];
+  console.log(checkedEl);
+  let valueEL = document.getElementsByClassName('ingredient-checkbox').value;
+  console.log(valueEl);
+  /* if (checkedEl == ){
+    checkedEl += prezzoBase
+  } */
+}
 /* otherCheckbox.addEventListener('change', () => {
     if(otherCheckbox.checked) {
       otherText.style.visibility = 'visible';
