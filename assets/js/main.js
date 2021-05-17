@@ -3,7 +3,10 @@ const prezzoBase = 50;
 const salsa = 5;
 const aggiunta = 10;
 
-
+document.getElementById('crea').addEventListener('click', function (){
+    let aggiunte = document.getElementById('userSelect').value;
+    console.log(aggiunte);    
+});
 
 
 var checkboxes = document.getElementsByClassName('ingredient-checkbox');
@@ -24,10 +27,7 @@ for (let i=0; i < checkboxes.length; i++){
 }
 
 
-document.getElementById('crea').addEventListener('click', function (){
-    let aggiunte = document.getElementById('userSelect').value;
-    console.log(aggiunte);    
-});
+
 //Consigli del giorno:
 //Create inizialmente un html base con gli elementi minimi necessari al funzionamento, 
 //passate poi alla parte JS ragionando come sempre a step. 
