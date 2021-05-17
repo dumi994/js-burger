@@ -12,10 +12,14 @@ let sum = 0;
 for (let i=0; i < checkboxes.length; i++){
   let checkedEl = checkboxes[i];
   console.log(checkedEl);
+  let valori = checkedEl.value;
+  console.log(valori);
   let checkbox = checkboxes[i];
+  const prezzoBase = 50;
   if(checkbox.checked == true) {
-    value = checkbox.value;
-    console.log(value += prezzoBase);
+    let value = checkbox.value
+    prezzoBase += value;
+    console.log(prezzoBase);
   }
 }
 
