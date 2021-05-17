@@ -6,7 +6,7 @@ var aggiunta = 10;
 
 
 
-var userPomodoro = document.getElementById('pomodori').value;
+/* var userPomodoro = document.getElementById('pomodori').value;
 var userMustard = document.getElementById('pomodori').value;
 var userCheese = document.getElementById('pomodori').value;
 var userEgg = document.getElementById('pomodori').value;
@@ -14,13 +14,21 @@ var userLettuce = document.getElementById('pomodori').value;
 var userKetchup = document.getElementById('pomodori').value;
 console.log(userKetchup);
 console.log(userEgg);
-/* function prezzoPanino(){
-    var panino = userSelect + prezzoBase;
-    console.log(panino);
-    if (userSelec){
+ */
+document.getElementById('crea').addEventListener('change', function (){
+    let aggiunte = document.getElementById('userSelect').value;
+    console.log(aggiunte);
+});
 
+/* otherCheckbox.addEventListener('change', () => {
+    if(otherCheckbox.checked) {
+      otherText.style.visibility = 'visible';
+      otherText.value = '';
+    } else {
+      otherText.style.visibility = 'hidden';
     }
-}; */
+  }); */
+
 //Consigli del giorno:
 //Create inizialmente un html base con gli elementi minimi necessari al funzionamento, 
 //passate poi alla parte JS ragionando come sempre a step. 

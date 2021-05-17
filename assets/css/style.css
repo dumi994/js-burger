@@ -7,6 +7,12 @@ body {
   background-color: rgb(243, 193, 201);
 }
 
+#crea{
+  width: 100px;
+  align-items: center;
+  align-self: center;
+}
+
 .container {
   width: 50%;
 
@@ -43,7 +49,7 @@ form {
 .orange_bar h1 {
   text-align: center;
   vertical-align: middle;
-  padding-top: 5%;
+  padding-top: 1%;
   padding-right: 400px;
 }
 
