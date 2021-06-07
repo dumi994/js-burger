@@ -1,15 +1,12 @@
 //Il programma dovrà consentire di calcolare il prezzo del panino selezionando o deselezionando gli ingredienti proposti.
-const prezzoBase = 50;
+let prezzoBase = 5.00;
 const salsa = 5;
-const aggiunta = 10;
+/* const aggiunta = 10; */
 
 document.getElementById('crea').addEventListener('click', function (){
     let aggiunte = document.getElementById('userSelect').value;
-    console.log(aggiunte);    
-});
-
-
-var checkboxes = document.getElementsByClassName('ingredient-checkbox');
+    console.log(aggiunte);
+    var checkboxes = document.getElementsByClassName('ingredient-checkbox');
 console.log(checkboxes);
 let sum = 0;
 for (let i=0; i < checkboxes.length; i++){
@@ -18,13 +15,17 @@ for (let i=0; i < checkboxes.length; i++){
   let valori = checkedEl.value;
   console.log(valori);
   let checkbox = checkboxes[i];
-  const prezzoBase = 50;
+  
   if(checkbox.checked == true) {
-    let value = checkbox.value
-    prezzoBase += value;
+    let ingValue = checkbox.value
+    prezzoBase += ingValue;
     console.log(prezzoBase);
   }
 }
+
+});
+
+
 
 
 
